@@ -1,12 +1,16 @@
-// 7. Write a program to print the first N even natural numbers in reverse order
+// 7. Write a program to count digits in a given number
 
 #include<stdio.h>
 int main()
 {
-     int n;
-     printf("Enter the number how many odd number you want to print");
+     int n,c=0;
+     printf("Enter the number");
      scanf("%d",&n);
-     for(int i =n*2 - 2;i>=0;i-=2)
-        printf("%d\n",i);
+     while(n>0)
+     {
+        c++;
+        n = n/10;
+     }
+     printf("Number of digit is %d",c);
      return 0;
 }

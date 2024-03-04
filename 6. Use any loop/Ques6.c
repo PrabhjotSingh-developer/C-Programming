@@ -1,13 +1,15 @@
-// 6. Write a program to print the first N even natural numbers
+// 6. Write a program to calculate factorial of a number
 
 
 #include<stdio.h>
 int main()
 {
-          int n;
-     printf("Enter the number how many odd number you want to print");
+          int n,fact = 1;
+     printf("Enter the number");
      scanf("%d",&n);
-     for(int i =0;i<n*2;i+=2)
-        printf("%d\n",i);
+     for(int i =n;i>=1;i--)
+        fact *=i;
+
+      printf("factorial of %d is %d\n",n,fact);
      return 0;
 }

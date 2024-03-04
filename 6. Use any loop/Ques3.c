@@ -1,13 +1,16 @@
-// 3. Write a program to print the first N natural numbers in reverse order
+//3. Write a program to calculate sum of first N odd natural numbers
+
 
 
 #include<stdio.h>
 int main()
 {
-      int n;
+      int n,sum = 0;
      printf("Enter the n ");
      scanf("%d",&n);
-     for(int i =n;i>=0;i--)
-        printf("%d\n",i);
+     for(int i =1;i<n*2;i+=2)
+         sum += i;
+      
+      printf("Sum of %d odd number is %d",n,sum);
      return 0;
 }

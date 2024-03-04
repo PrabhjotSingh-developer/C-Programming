@@ -1,11 +1,13 @@
-// 1. Write a program to print Prabhjot N times on the screen
+// 1. Write a program to calculate sum of first N natural numbers
 #include<stdio.h>
 int main()
 {
-     int n;
-     printf("Enter how many time we print the name => Prabhjot");
+     int n,sum=0;
+     printf("Enter the number");
      scanf("%d",&n);
-     for(int i =0;i<n;i++)
-        printf("Prabhjot\n");
+     for(int i =0;i<=n;i++)
+         sum +=i;
+      
+     printf("Sum of %d natural number %d",n,sum);
      return 0;
 }
