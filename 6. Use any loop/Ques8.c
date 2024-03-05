@@ -11,7 +11,7 @@ int main()
    // 
      for(int i = 2;i<=n;i++)
      {
-        if(n%i==0 && n!=i )
+        if(n%i==0 && n!=i ) 
         {
                   
           flag = 1;
