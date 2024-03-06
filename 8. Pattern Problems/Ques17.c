@@ -1,9 +1,9 @@
 /*
-        *
-       * *
-      *   *
-     *     *
     *********
+     *     *
+      *   *
+       * *
+        *
 */
 #include<stdio.h>
 int main()
@@ -12,7 +12,7 @@ int main()
    {
     for(int j = 1;j<=9;j++)
     {
-        if(i==5 || j == 6-i || j==4+i)
+        if(i==1 || (j == i || j==10-i))
            printf(" * ");
         else
            printf("   ");
