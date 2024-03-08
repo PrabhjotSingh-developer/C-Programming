@@ -2,10 +2,20 @@
 // number is even, otherwise return 0. (TSRS)
 #include<stdio.h>
 int checkNum(int);
+
 int main()
 {
-    int n;
+    int n,a;
     printf("Enter the no");
     scanf("%d",&n);
+    a = checkNum(n);
+    if(a)
+       printf("Number is even");
+    else
+        printf("Number is odd");
     return 0;
+}
+int checkNum(int num)
+{
+     return (num%2)?0:1;
 }
