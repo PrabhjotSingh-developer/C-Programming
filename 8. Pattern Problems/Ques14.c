@@ -14,12 +14,10 @@ int main(){
     {
         for(int j=1;j<=5;j++)
         {
-            if(j==1 || j == i || i==5)
-            {
-                 printf("* ");
-            }
+            if(j==1 || i==j || i==5 )
+              printf("* ");
             else
-               printf("  ");
+              printf("  ");
         }
         printf("\n");
     }

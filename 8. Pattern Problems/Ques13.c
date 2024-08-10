@@ -10,20 +10,20 @@
 #include<stdio.h>
 int main()
 {
-    int a = 'A';
+    int k = 'A';
     for(int i=1;i<=7;i++)
     {
-        a = 'A';
-        for(int j = 1;j<=13;j++)
+        k='A';
+        for(int j=1;j<=13;j++)
         {
+
             if(j<=8-i || j>=6+i)
             {
-                printf("%c ",(j<=7)?a++:--a);
+               printf(" %c ",(j<=7)?k++:--k);
             }
             else
-              printf("  ");
+              printf("   ");
         }
-              printf("\n");
-
+        printf("\n");
     }
 }

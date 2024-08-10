@@ -12,21 +12,17 @@
 #include <stdio.h>
 int main()
 {
-     for(int i=1;i<=9;i++)
+   for(int i = 1;i<=9;i++)
+   {
+     for(int j = 1;j<=9;j++)
      {
-        for(int j = 1;j<=9;j++)
-        {
-            if(i<=5 && j>=6-i && j<=4+i)
-            {
+           if((j>=6-i && j<=4+i && i<5)||i==5 ||(i>5 && j>=i-4 && j<=9-i+5))
+           {
                 printf("*");
-            }
-            else if(i>5 && j>=i-4 && j<=14-i )
-            {
-                 printf("*");
-            }
-            else
-              printf(" ");
-        }
-        printf("\n");
+           }
+           else
+             printf(" ");
      }
+     printf("\n");
+   }
 }

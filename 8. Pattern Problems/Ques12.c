@@ -11,18 +11,18 @@ A B C D E D C B A
 int main()
 {
     char a = 'A';
-    for(int i = 1;i<=5;i++)
-    {
-        a = 'A';
-        for(int j = 1;j<=9;j++)
-        {
-            if(j>=i && j<=10-i)
-            {
-                 printf("%c ",(j<5)?a++:a--);
-            }
-            else
-              printf("  ");
-        }
-        printf("\n");
-    }
+   for(int i=1;i<=5;i++)
+   {
+    a = 'A';
+     for(int j=1;j<=9;j++)
+     {
+       if(j>=i && j<=10-i)
+       {
+           printf(" %c ",(j<5?a++:a--));
+       }
+       else
+        printf("   ");
+     }
+     printf("\n");
+   }
 }
